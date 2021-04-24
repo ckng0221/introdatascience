@@ -1,10 +1,9 @@
 library(shiny)
-library(shinythemes)
-
+library(rmarkdown)
 
 # =========== User Interface ============= #
 
-ui <- fluidPage(theme = shinytheme("superhero"),
+ui <- fluidPage(
                 navbarPage("BMI Calculator (Tutorial 6):",
                            tabPanel("Home",
                                     # Input values
@@ -22,7 +21,7 @@ ui <- fluidPage(theme = shinytheme("superhero"),
                                                   max = 100),
                                       
                                       actionButton("submitbutton", 
-                                                   "Submit", 
+                                                   "Submit (Double Click)", 
                                                    class = "btn btn-primary")
                                     ),
                                     
